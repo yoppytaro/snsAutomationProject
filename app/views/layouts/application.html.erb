@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagramruby</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <header>
+          <div class="header-logo">
+            <%= link_to image_tag("SNSBOT.png"), "/" %>
+          </div>
+          <ul class="header-menus">
+              <li>
+                <%= link_to("新規登録", "signup") %>
+              </li>
+              <li>
+                <%= link_to("ログイン", "users/login") %>
+              </li>
+          </ul>
+      </header>
+      <%= yield %>
+      <footer>
+        <%= image_tag 'SNSBOT.png' %>
+      </footer>
+  </body>
+</html>
