@@ -58,14 +58,7 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-group :development, :test do
- gem 'capistrano'
- gem 'capistrano-bundler'
- gem 'capistrano-rails'
- gem 'capistrano-rbenv'
-end
-
-group :production, :staging do
+group :production do
   gem 'unicorn'
 end
 
