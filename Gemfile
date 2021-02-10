@@ -51,7 +51,7 @@ group :development do
 end
 
 group :development, :test do
- gem 'capistrano'
+ gem 'capistrano',"3.12.1"
  gem 'capistrano-bundler'
  gem 'capistrano-rails'
  gem 'capistrano-rbenv'
