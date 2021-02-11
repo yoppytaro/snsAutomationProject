@@ -23,8 +23,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  pool: 5
-  database: pictweet_production
+  reconnect: false
+  database: snsAutomationProject
   username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  password: <%= ENV['DATABASE_PRO_PASSWORD'] %>
