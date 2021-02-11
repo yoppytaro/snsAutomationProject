@@ -5,7 +5,7 @@ lock '3.12.1'
 set :application, 'snsAutomationProject'
 
 # cloneするgitのレポジトリ
-set :repo_url, 'git@github.com:yoppytaro/snsAutomationProject.git'
+set :repo_url, 'git@github:yoppytaro/snsAutomationProject.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, 'master'
