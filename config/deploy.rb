@@ -11,7 +11,7 @@ set :repo_url, 'git@github:yoppytaro/snsAutomationProject.git'
 set :branch, 'master'
 
 # deploy先のディレクトリ。 
-set :deploy_to, '/var/www/snsAutomationProject'
+set :deploy_to, '/var/www/rails/snsAutomationProject'
 
 # シンボリックリンクをはるファイル。(※後述)
 set :linked_files, fetch(:linked_files, []).push('config/settings.yml')
