@@ -1,8 +1,8 @@
 # EC2サーバーのIP、EC2サーバーにログインするユーザー名、サーバーのロールを記述
-server '35.72.100.102', user: 'yoppy', roles: %w{app db web} 
+server '18.178.75.230', user: 'snsAutomationProject', roles: %w{app db web} 
 
 #デプロイするサーバーにsshログインする鍵の情報を記述
-set :ssh_options, keys: '~/.ssh/yoppy_key_rsa' 
+set :ssh_options, keys: '~/.ssh/snsAutomationProject_key_rsa' 
 
 
 
