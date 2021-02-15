@@ -53,5 +53,5 @@ production:
   pool: 5
   database: snsAutomationProject_production
   username: root
-  password: Good0201!
+  password: <%= ENV['DB_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
